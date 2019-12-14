@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0035c5ce-0a33-4b5a-b8f5-1248de15d999/deploy-status)](https://nick-hulea-third-and-grove.netlify.com)
 
 
-https://nick-hulea-third-and-grove.netlify.com
+live site --> https://nick-hulea-third-and-grove.netlify.com
 
 ## About
 
@@ -13,10 +13,19 @@ I added 2 commands one `npm run dev` which loads a local dev server and reloads 
 
 This repository also includes a configuration with Gitlab that runs the build command and deploys the site on every commit to master or builds a preview verion of a pull request on Netlify.
 
-I did not use any CSS framework for this but could have added one if needed. I feel like when projects are smaller like this it can be easier to write most of the styles from the sketch file, but for bigger projects a framework is needed. 
+I did not use a CSS framework for this but could have added one if needed. I feel like when projects are smaller like this it can be easier to write most of the styles from the sketch file, but for bigger projects a framework is needed. However in component driven development all code should broken into smaller pieces to keep track of changes in large projects.
 
+I used a fetch call to pull in data from https://randomuser.me/ instead of creating mu own structured data. 
 
+While I was developing the site I was using Google Lighthouse to audit the site.
 
+Scores:
+
+ - Perfomance: 99
+ - Accessibility: 94
+ - Best Practices: 100
+ - SE0: 100 
+ 
 ## Develop and Build
 
 - Clone into repository
@@ -31,7 +40,7 @@ I did not use any CSS framework for this but could have added one if needed. I f
 
 `npm install`
 
-- Deploy the dev sever and start coding !
+- Deploy the dev sever and start coding, all the files are in `src/` local server is http://localhost:8080 !
 
 `npm run dev`
 
