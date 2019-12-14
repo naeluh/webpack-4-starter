@@ -1,0 +1,170 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "variables";
+@import "utilities";
+
+body {
+  font-family: $roboto;
+  background: #f9fafb;
+}
+
+header.tag-header {
+  height: $div-height;
+}
+
+.navbar-controls {
+  height: $div-height;
+  background: $gradient-1;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  * {
+    margin: auto;
+  }
+  &__left {
+    justify-content: flex-start;
+    flex: 0;
+    &__button {
+      svg {
+      }
+    }
+  }
+  &__center {
+    justify-content: center;
+    flex: 1 1;
+    &__heading h3 {
+      color: $white;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 1.5px;
+    }
+  }
+  &__right {
+    flex: 0 0 82px;
+    justify-content: flex-end;
+  }
+}
+
+.tag-page {
+  &__load {
+    display: flex;
+    margin: auto;
+    height: calc(100vh - 80px);
+    &__text {
+      flex: 1 1 100%;
+      color: $orange;
+      margin: auto;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+  &__card {
+    margin: 10px 0;
+    &__container {
+      height: 100px;
+      display: flex;
+      flex-flow: row wrap;
+      box-shadow: $box-shadow-2;
+      background-color: $white;
+      * {
+        margin: auto;
+      }
+    }
+    &__figure {
+      padding: 20px;
+      flex: 0;
+      img {
+        border-radius: 50%;
+        width: 60px;
+      }
+    }
+    &__header {
+      flex: 1 1;
+      h3 {
+        color: $orange;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        margin-bottom: 5px;
+      }
+      p {
+        color: $dark-grey;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14px;
+      }
+    }
+    &__button {
+      flex: 0;
+      svg {
+        transform: rotate(180deg);
+        transition: transform 150ms ease;
+        justify-content: flex-end;
+        pointer-events: none;
+      }
+      &.active {
+        svg {
+          transform: rotate(0deg);
+        }
+      }
+    }
+    &__info {
+      background: $gradient-1;
+      display: flex;
+      height: $div-height;
+      margin: 0 10px;
+      box-shadow: $box-shadow-1;
+      height: 0;
+      transition: height 150ms ease;
+      &.active {
+        height: $div-height;
+        .line {
+          height: $div-height;
+        }
+      }
+      * {
+        margin: auto;
+      }
+      h5 {
+        margin-bottom: 10px;
+        color: $white;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        text-align: center;
+      }
+      p {
+        color: $white;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14px;
+        text-align: center;
+      }
+      &__left {
+        justify-content: flex-start;
+        flex: 1;
+        padding: 0 10px;
+      }
+      &__center {
+        flex: 0 0 1px;
+        justify-content: center;
+        padding: 0;
+        .line {
+          flex: 0 0 1px;
+          height: 0;
+          transition: height 150ms ease;
+          padding: 0;
+        }
+      }
+      &__right {
+        justify-content: flex-end;
+        flex: 1;
+        padding: 0 10px;
+      }
+    }
+  }
+}
