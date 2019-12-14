@@ -11,7 +11,7 @@ From the instructions in the document provided I created a repository that runs 
 
 I added 2 commands one `npm run dev` which loads a local dev server and reloads on change. It also includes a build command `npm run build` that builds a production version of the code. 
 
-This repository also includes a configuration with Gitlab that runs the build command and deploys the site on every commit to master or builds a preview verion of a pull request on Netlify.
+This repository also includes a configuration with Gitlab that runs the build command and deploys the site on every commit to master or builds a preview version of a pull request on Netlify.
 
 I did not use a CSS framework for this but could have added one if needed. I feel like when projects are smaller like this it can be easier to write most of the styles from the sketch file, but for bigger projects a framework is needed. However in component driven development all code should broken into smaller pieces to keep track of changes in large projects.
 
@@ -21,7 +21,7 @@ While I was developing the site I was using Google Lighthouse to audit the site.
 
 Scores:
 
- - Perfomance: 99
+ - Performance: 99
  - Accessibility: 94
  - Best Practices: 100
  - SE0: 100 
