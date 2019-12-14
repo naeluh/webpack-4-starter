@@ -17,7 +17,7 @@ I did not use any CSS framework for this but could have added one if needed. I f
 
 
 
-## Install
+## Develop and Build
 
 - Clone into repository
 
