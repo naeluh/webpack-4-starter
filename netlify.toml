@@ -1,0 +1,32 @@
+# netlify.toml
+# The prefix is the path to your package.json file in your theme
+# Change the path of your theme if it is not themes/quire-starter-theme.
+
+# This section is the production configuration and is all you need to deploy
+[build]
+publish = "dist"
+command = "npm run build"
+
+[context.production.environment]
+
+# These next configurations are optional
+
+# This section is the pull request configuration
+[context.deploy-preview]
+command = "npm run build"
+
+[context.deploy-preview.environment]
+
+
+# This section is the branch configuration
+[context.branch-deploy]
+command = "npm run build"
+
+[context.branch-deploy.environment]
+
+
+# This section is the branch configuration but targets a specific branch and also runs a different command
+[context.stage]
+command = "npm run build"
+
+[context.stage.environment]
