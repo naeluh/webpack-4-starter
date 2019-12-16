@@ -28,7 +28,9 @@ const addEvents = async () => {
               button.classList.remove("active");
               button.setAttribute("aria-expanded", "false");
               button.parentNode.classList.remove("active");
-              button.parentNode.classList.remove("active");
+              button.parentNode.parentNode.children[1].classList.remove(
+                "active"
+              );
               button.parentNode.parentNode.children[1].setAttribute(
                 "aria-hidden",
                 "true"
@@ -39,7 +41,7 @@ const addEvents = async () => {
 
         // Set class active
         event.target.classList.toggle("active");
-        event.target.parentNode.classList.toggle("active");
+        button.parentNode.classList.toggle("active");
         event.target.parentNode.parentNode.children[1].classList.toggle(
           "active"
         );
