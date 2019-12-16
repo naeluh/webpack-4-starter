@@ -64,12 +64,18 @@ header.tag-header {
   }
   &__card {
     margin: 10px 0;
+
     &__container {
+      position: relative;
       height: 100px;
       display: flex;
       flex-flow: row wrap;
       box-shadow: $box-shadow-2;
       background-color: $white;
+      transition: box-shadow 150ms ease;
+      &.active {
+        box-shadow: $box-shadow-3;
+      }
       * {
         margin: auto;
       }
@@ -113,6 +119,7 @@ header.tag-header {
       }
     }
     &__info {
+      overflow: hidden;
       background: $gradient-1;
       display: flex;
       height: $div-height;
