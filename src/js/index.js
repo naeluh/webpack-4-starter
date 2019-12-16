@@ -41,7 +41,7 @@ const addEvents = async () => {
 
         // Set class active
         event.target.classList.toggle("active");
-        button.parentNode.classList.toggle("active");
+        event.parentNode.classList.toggle("active");
         event.target.parentNode.parentNode.children[1].classList.toggle(
           "active"
         );
