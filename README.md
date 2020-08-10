@@ -14,6 +14,10 @@ Lighthouse Scores:
  - Best Practices: 100
  - SE0: 100 
  
+To dos: 
+
+- Support PWA and SWR
+ 
 ## Develop and Build
 
 - Clone into repository
