@@ -1,7 +1,7 @@
 {
-  "name": "thirdandgrove",
+  "name": "webpack-4-starter",
   "version": "1.0.0",
-  "description": "TAG Frontend Developer Assessment",
+  "description": "Webpack 4 starter",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
