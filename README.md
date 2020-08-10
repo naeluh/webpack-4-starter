@@ -7,7 +7,7 @@ Simple development starter kit for Webpack 4
 - SCSS support 
 - ES6 modern JS
 
-Scores:
+Lighthouse Scores:
 
  - Performance: 99
  - Accessibility: 94
